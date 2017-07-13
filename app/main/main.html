@@ -1,0 +1,26 @@
+<!-- Our left sidebar with multichecking data -->
+
+
+<aside>
+  <div class="titleBar">
+    {{vm.name}}
+  </div>
+
+  <ul data-ng-repeat="(key, n) in vm.data">
+    <li>
+      <label>
+      <input type="checkbox" ng-click="vm.isChecked($index)" checked>
+        {{key}} - {{n.value + n.unit}}
+    </label>
+  </li>
+  </ul>
+
+  <button class='subBtn' data-ng-click="vm.subscribe(vm.val)">{{vm.info}}</button>
+</aside>
+
+<article>
+  <div>
+    <canvas id="pie" class="chart chart-pie" chart-data="vm.tabOfData" chart-labels="vm.labels" chart-options="vm.options">
+    </canvas>
+  </div>
+</article>

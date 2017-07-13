@@ -1,0 +1,97 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.subBtn {
+  background-color: #e7e7e7;
+  display: inline-block;
+  text-align:center;
+  padding: 20px 40px;
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 4px 20px #ccc;
+  font-size: 22px;
+  margin: 50px 2.6%;
+}
+
+.subBtn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0px 2px 20px #777;
+}
+
+.subBtn:focus {
+  outline: 0;
+}
+
+.subBtn:active {
+  background-color: #4CAF50;
+}
+
+.titleBar{
+      background: #3F51B5;
+      font-size: 1.3em;
+      padding: 0;
+      color: #fefefe;
+      float: none;
+      max-width: none;
+      font-weight: 400;
+      line-height: 64px;
+}
+
+aside{
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 0px 15px #555;
+  margin: 0px 1% 0px ;
+}
+
+aside ul {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+
+aside ul li{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+article{
+  vertical-align: middle;
+  display: inline-block;
+  width: 60%;
+  height: 10%;
+  overflow: initial;
+}
+
+article div{
+  width: 70%;
+  margin: 0 auto;
+}
