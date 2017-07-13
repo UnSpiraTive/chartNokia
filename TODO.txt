@@ -1,0 +1,9 @@
+Create application consisting of 2 panels:
+- left panel: list of elements to be displayed on chart (multi selection should be available),
+- right panel: chart with data.
+
+Data is available via dataProvider service.
+Your code should be well and carefully tested.
+You can use whatever you want to create chart.
+
+Good luck!
